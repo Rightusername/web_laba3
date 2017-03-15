@@ -1,0 +1,43 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<title>MyDB</title>
+	<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="wrap">
+
+	<nav>
+		<ul id="list">
+
+		</ul>
+	</nav>
+	<br>
+	<form method="POST" id="formx" action="javascript:void(null);" onsubmit="addRow()">
+		<input id="Name" name="Name" value="" type="text" placeholder="Name">
+		<input id="Radius" name="Radius" value="2000" type="number" placeholder="Radius">
+		<input id="CoreTemperature" name="CoreTemperature" value="2000" type="number" placeholder="CoreTemperature">
+		<input id="isAthmosphere" name="isAthmosphere" value="0" type="number" min="0" max="1" placeholder="isAthmosphere">
+		<input id="isLife" name="isLife" value="0" type="number" min="0" max="1" placeholder="isLife">
+		<input id="star" name="star" value="Sun" type="text" placeholder="Star">
+		<input id="satellites" name="satellites" value="0" type="number" min="0" placeholder="satellites">
+		<input value="Add" type="submit">
+		<a onclick="this.parentNode.style.height='0'" class="formClose"></a>
+	</form>
+	<br>
+<table id="table"></table>
+<a class="addBtn" onclick="$('#formx').css('height','40px')" >Add row</a>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="view.js"></script>
+</body>
+</html>
