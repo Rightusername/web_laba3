@@ -3,10 +3,10 @@ var mysql = require('mysql');
 var app = express();
 var bodyParser = require('body-parser')
 var urlutils = require('url');
-s2
+
 
 var connection = mysql.createConnection({
-	host: 'localhost14',
+	host: 'localhost',
 	user: 'root',
 	password: '135531',
 	database: 'laba3'
