@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser')
 var urlutils = require('url');
 
-
+s
 var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
@@ -127,7 +127,7 @@ function updateRow(obj,id,table) {
 			console.log("Error in the query");
 		}else{
 			console.log('row updated');
-		} 
+		}
 	});
 }
 
