@@ -4,9 +4,9 @@ var app = express();
 var bodyParser = require('body-parser')
 var urlutils = require('url');
 
-s
+d
 var connection = mysql.createConnection({
-	host: 'localhost14',
+	host: 'localhost',
 	user: 'root',
 	password: '135531',
 	database: 'laba3'
